@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style>
+        #agendatxt {
+            background-color: lightgray;
+            min-height: 150px;
+            width: 200px;
+            border:2px solid black;
+        }
+    </style>
+    <script>
+
+        var agenda = [];
+
+        function dibujar() {
+            agendatxt.innerHTML = null; //Antes de dibujar, vaciamos el <div> para que no escriba la agenda varias veces.
+            for (var i = 0; i < agenda.length ; i++) {
+                agendatxt.innerHTML += agenda[i] + "<br/ >";
+            }
+        }
+
+
+        function anadir() {
+            var dato = document.getElementById("txtAnadir");
+            agenda.push(dato.value);
+            dibujar();
+
+        }
+
+        function borrar() {
+            var dato = document.getElementById("txtBorrar");
+            if (!isNaN(dato.value) && dato.value != "") { //Comprobamos que el dato sea un número
+                agenda.splice(dato.value, 1);
+                dibujar();
+            }
+        }
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1> Agenda:</h1>
+    <div id="agendatxt"></div>
+    <input type="text" id="txtAnadir" />
+    <input type="button" value="Añadir" onclick="anadir()" />
+    <br />
+    <input type="text" id="txtBorrar" />
+    <input type="button" value="Borrar" onclick="borrar()" />
+
+
+</body>
+</html>
