@@ -1,0 +1,77 @@
+﻿body {
+    padding-left: 10%;
+    padding-top: 15px;
+}
+
+div#datos {
+    background-color: lightgrey;
+    padding: 5px;
+    width: 186px;
+    float: left;
+    border: 2px solid grey;
+    border-radius: 7px;
+}
+
+
+div#botones {
+    margin: 10px;
+    background-color: lightgrey;
+    padding: 5px;
+    float: left;
+    border: 2px solid grey;
+    border-radius: 7px;
+}
+
+input#btnSuma {
+    font-weight: bold;
+    float: left;
+    width: 30px;
+    height: 20px;
+}
+input#btnSuma:hover{
+    background-color:lightgray;
+}
+input#btnResta:hover{
+    background-color:lightgray;
+}   
+input#btnMult:hover{
+    background-color:lightgray;
+}   
+input#btnDiv:hover{
+    background-color:lightgray;
+}
+input#btnDel:hover{
+    background-color:darkred;
+}         
+
+input#btnResta {    
+    font-weight: bold;
+    float: left;
+    width: 30px;
+    height: 20px;
+}
+
+input#btnMult {
+    font-weight: bold;
+    clear: both;
+    float: left;
+    width: 30px;
+    height: 20px;
+}
+
+input#btnDiv {
+    font-weight: bold;
+    float: left;
+    width: 30px;
+    height: 20px;
+}
+
+input#btnDel {
+    font-weight: bold;
+    color:white;
+    clear: both;
+    float: left;
+    width: 60px;
+    height: 20px;
+    background-color: red;
+}
