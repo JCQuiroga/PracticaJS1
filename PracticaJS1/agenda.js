@@ -21,3 +21,5 @@ function borrar() {
     data.splice(borrar.value, 1);
     escribir();
 }
+
+//Cambio añadido de prueba para GitHub.
