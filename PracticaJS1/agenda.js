@@ -1,5 +1,6 @@
 ﻿
 var data = [];
+
 function escribir() {
     var capa = document.getElementById("capaAgenda");
     capa.innerHTML = "";
