@@ -53,9 +53,14 @@ var dividir = function () {
         document.getElementById("lbTot").innerHTML = res.toFixed(2); 
     }
 
-    document.getElementById("btnMas").onclick = operar;
+   /* document.getElementById("btnMas").onclick = operar;
     document.getElementById("btnMenos").onclick = operar;
     document.getElementById("btnPor").onclick = operar;
-    document.getElementById("btnDividir").onclick = operar;
+    document.getElementById("btnDividir").onclick = operar;*/
 
 //Cambio de prueba para GitHub
+
+    var botones = document.querySelectorAll("button"); // ejemplo de querySelector. El querySelector devuelve un objeto (primero q encuentra). El querySelectorAll devuelve un array con todos los objetos.
+    for (var i = 0; i < botones.length; i++) {
+        botones[i].onclick = operar;
+    }
